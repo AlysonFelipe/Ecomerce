@@ -4,14 +4,17 @@ import './App.css';
 import { RouteApp } from './route';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import CarrinhoContextProvider from "./hooks/CarrinhoContext";
+
 
 
 function App() {
   return (
     <>
-    
-      <ToastContainer />
-      <RouteApp />
+      <CarrinhoContextProvider>
+        <ToastContainer />
+        <RouteApp />
+      </CarrinhoContextProvider>
     </>
   );
 }

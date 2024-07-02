@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Button, Col, Row, Table } from "react-bootstrap";
-import { CarrinhoContext } from "./CarrinhoContext";
-import NavBar from "../componentes/NavBar";
+import { CarrinhoContext } from "../hooks/CarrinhoContext";
+import MeuNavBar from "../componentes/MeuNavBar";
 
 function Carrinho() {
   const { listaProdutosCarrinho, removerProduto } = useContext(CarrinhoContext);
@@ -16,7 +16,7 @@ function Carrinho() {
 
   return (
     <>
-      <NavBar>
+      <MeuNavBar>
         <Row className="justify-content-md-center">
           <Col md={6}>
             <h1>Lista de produtos carrinho </h1>
@@ -59,7 +59,7 @@ function Carrinho() {
             </Table>
           </Col>
         </Row>
-      </NavBar>
+      </MeuNavBar>
     </>
   );
 }

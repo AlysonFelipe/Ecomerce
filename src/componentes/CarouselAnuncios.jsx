@@ -1,4 +1,8 @@
 import { Carousel } from "react-bootstrap";
+import img1 from "../assents/image/fretegratis.jpg"; //- importar imagem
+import img2 from "../assents/image/anuncio02.jpg"
+import img3 from "../assents/image/anuncio03.jpg"
+import img4 from "../assents/image/anuncio04.jpg"
 
 function CarouselAnuncios() {
 
@@ -8,21 +12,21 @@ function CarouselAnuncios() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://via.placeholder.com/800x200.png?text=Anuncio+1"
+            src= {img1} height="500px"
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://via.placeholder.com/800x200.png?text=Anuncio+1"
+            src= {img2} height="500px"
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://via.placeholder.com/800x200.png?text=Anuncio+1"
+            src={img3} height="500px"
             alt="Second slide"
           />
         </Carousel.Item>
@@ -30,7 +34,7 @@ function CarouselAnuncios() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://via.placeholder.com/800x200.png?text=Anuncio+8"
+            src= {img4} height="500px"
             alt="Third slide"
           />
 

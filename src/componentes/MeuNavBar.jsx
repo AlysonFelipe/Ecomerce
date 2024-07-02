@@ -9,7 +9,7 @@ function MeuNavBar(props) {
         <Container>
           <Navbar.Brand href="/home">E-Commerce</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/produtos">Produtos</Nav.Link>
           </Nav>
           <Navbar.Collapse className="justify-content-end">
